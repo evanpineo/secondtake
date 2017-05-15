@@ -1,0 +1,6 @@
+<div class="box col-10 offset-1">
+  <h1><%= @category.manufacturer %></h1><br>
+  <i><%= @category.model %></i><br>
+  <p><%= @category.specs %></p><br>
+  <%= link_to 'Edit', edit_category_path(@category), class: 'btn btn-primary' %>
+</div>

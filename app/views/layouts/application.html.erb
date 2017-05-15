@@ -2,13 +2,28 @@
 <html>
   <head>
     <title>Secondtake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  
+  <nav class="navbar navbar bg-faded">
+    <div class="row">
+      <div class="col-xs-5 offset-1">
+        <%= link_to 'Equipment Listings', root_path, class: 'navbar-brand' %>
+      </div>
+      <div class="col-xs-5 offset-1">
+        <%= link_to 'Add Equipment', new_category_path, class: 'navbar-brand btn btn-primary' %>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="hero offset-1"></div>
+  
     <%= yield %>
   </body>
+  
 </html>

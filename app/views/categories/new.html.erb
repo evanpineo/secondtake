@@ -1,0 +1,8 @@
+<div class="box col-10 offset-1">
+  <%= simple_form_for @category, html: { autocomplete: 'off' } do |c| %>
+    <%= c.input :manufacturer %>
+    <%= c.input :model %>
+    <%= c.input :specs %>
+    <%= c.submit 'Add', class: 'btn btn-primary' %>
+  <% end %>
+</div>
