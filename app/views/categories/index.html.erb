@@ -3,5 +3,6 @@
     <h1><%= link_to category.manufacturer, category_path(category) %></h1><br>
     <i><%= category.model %></i><br>
     <p><%= category.specs %></p>
+    <%= link_to 'Edit', edit_category_path(category), class: 'btn btn-primary' %>
   </div>
 <% end %>
